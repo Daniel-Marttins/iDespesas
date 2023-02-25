@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/02/16 17:09:35.000.464,=C:\Users\Usuario\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/02/24 21:14:46.000.527,=C:\Users\Usuario\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/02/24 21:46:58.632,=C:\Users\Usuario\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/02/24 21:47:19.757,C:\Users\Usuario\OneDrive\Documentos\ProjetosDelphi\iDispesas\ULogin.pas=C:\Users\Usuario\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/02/24 21:47:19.757,C:\Users\Usuario\OneDrive\Documentos\ProjetosDelphi\iDispesas\ULogin.dfm=C:\Users\Usuario\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2023/02/24 21:47:40.447,C:\Users\Usuario\OneDrive\Documentos\ProjetosDelphi\iDispesas\iDispesas.dproj=C:\Users\Usuario\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2023/02/24 22:22:41.442,=C:\Users\Usuario\OneDrive\Documentos\ProjetosDelphi\iDispesas\Unit1.pas</Transaction>
+    <Transaction>2023/02/24 22:22:53.453,C:\Users\Usuario\OneDrive\Documentos\ProjetosDelphi\iDispesas\UCadastro.pas=C:\Users\Usuario\OneDrive\Documentos\ProjetosDelphi\iDispesas\Unit1.pas</Transaction>
+    <Transaction>2023/02/24 22:22:53.453,C:\Users\Usuario\OneDrive\Documentos\ProjetosDelphi\iDispesas\UCadastro.dfm=C:\Users\Usuario\OneDrive\Documentos\ProjetosDelphi\iDispesas\Unit1.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

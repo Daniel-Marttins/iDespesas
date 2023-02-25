@@ -26,10 +26,6 @@ object FormLogin: TFormLogin
     Color = clSkyBlue
     ParentBackground = False
     TabOrder = 0
-    ExplicitLeft = 296
-    ExplicitTop = 144
-    ExplicitWidth = 185
-    ExplicitHeight = 41
     object Label5: TLabel
       Left = 271
       Top = 103
@@ -65,7 +61,6 @@ object FormLogin: TFormLogin
       Color = clMenuBar
       ParentBackground = False
       TabOrder = 0
-      ExplicitLeft = 0
       object Label1: TLabel
         Left = 1
         Top = 296
@@ -340,7 +335,7 @@ object FormLogin: TFormLogin
       Left = 271
       Top = 128
       Width = 305
-      Height = 30
+      Height = 27
       Align = alCustom
       CharCase = ecUpperCase
       Font.Charset = DEFAULT_CHARSET
@@ -355,7 +350,7 @@ object FormLogin: TFormLogin
       Left = 271
       Top = 217
       Width = 305
-      Height = 30
+      Height = 27
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -16

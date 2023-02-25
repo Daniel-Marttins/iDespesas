@@ -43,8 +43,14 @@ begin
 
   try
     if Key = VK_RETURN then
+      begin
+        ShowMessage('Logado!')
+      end;
+    if Key = VK_F4 then
+    begin
       FormCadastro.Show;
       FormLogin.Visible := False;
+    end;
   finally
 
   end;

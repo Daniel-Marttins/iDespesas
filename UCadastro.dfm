@@ -334,6 +334,7 @@ object FormCadastro: TFormCadastro
     end
   end
   object QueryCadastro: TADOQuery
+    Active = True
     Connection = dmDados.adoConexao
     CursorType = ctStatic
     Parameters = <>

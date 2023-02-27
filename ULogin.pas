@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,
-  Vcl.Imaging.pngimage, UCadastro, Data.DB, Data.Win.ADODB;
+  Vcl.Imaging.pngimage, UCadastro, Data.DB, Data.Win.ADODB, UPrincipal;
 
 type
   TFormLogin = class(TForm)
@@ -54,9 +54,14 @@ begin
         QueryLogin.Open;
 
         if QueryLogin.RecordCount = 1 then
-          ShowMessage('Logado');
+          try
+            FormPrincipal.Show;
+            FormLogin.Visible := False;
+          finally
+
+          end;
       end;
-    if Key = VK_F4 then
+    if Key = VK_F2 then
     begin
       FormCadastro.Show;
       FormLogin.Visible := False;

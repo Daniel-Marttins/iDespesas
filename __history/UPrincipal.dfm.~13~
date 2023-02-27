@@ -1,0 +1,46 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 405
+  ClientWidth = 608
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 608
+    Height = 405
+    Align = alClient
+    Color = clSkyBlue
+    ParentBackground = False
+    TabOrder = 0
+    ExplicitLeft = 112
+    ExplicitTop = 96
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+    object TabControl1: TTabControl
+      Left = 1
+      Top = 1
+      Width = 606
+      Height = 96
+      Align = alTop
+      TabOrder = 0
+    end
+    object TabControl2: TTabControl
+      Left = 1
+      Top = 184
+      Width = 606
+      Height = 220
+      Align = alBottom
+      TabOrder = 1
+    end
+  end
+end

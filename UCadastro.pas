@@ -75,12 +75,12 @@ begin
     if Key = VK_F5 then
     begin
       QueryCadastro.SQL.Clear;
-      QueryCadastro.SQL.Text := 'SELECT * FROM USUARIO WHERE US_USUARIO = ' + QuotedStr(edtUSUARIO.Text);
+      QueryCadastro.SQL.Text := 'SELECT * FROM USUARIO WHERE US_USUARIO = ' + QuotedStr(edtUSUARIO.Text) + ' OR US_EMAIL = ' + QuotedStr(edtEMAIL.Text);
       QueryCadastro.Open;
 
       if QueryCadastro.RecordCount > 0 then
       begin
-        ShowMessage('Usuário já existe, tente outro nome!');
+        ShowMessage('Usuário ou Email já existem, tente outro nome!');
         Exit;
       end
 

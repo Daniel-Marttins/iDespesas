@@ -334,7 +334,7 @@ object FormCadastro: TFormCadastro
     end
   end
   object QueryCadastro: TADOQuery
-    Connection = adoConexao
+    Connection = dmDados.adoConexao
     CursorType = ctStatic
     Parameters = <>
     SQL.Strings = (
@@ -368,15 +368,5 @@ object FormCadastro: TFormCadastro
       FieldName = 'US_ENDERECO'
       Size = 50
     end
-  end
-  object adoConexao: TADOConnection
-    Connected = True
-    ConnectionString = 
-      'Provider=SQLOLEDB.1;Password=id-0601;Persist Security Info=True;' +
-      'User ID=sa;Initial Catalog=iDespesas;Data Source=NOXVOIDIA'
-    LoginPrompt = False
-    Provider = 'SQLOLEDB.1'
-    Left = 472
-    Top = 6
   end
 end

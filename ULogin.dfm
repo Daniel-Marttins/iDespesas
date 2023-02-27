@@ -79,7 +79,7 @@ object FormLogin: TFormLogin
         Transparent = False
         Layout = tlCenter
         WordWrap = True
-        ExplicitLeft = 2
+        ExplicitLeft = 0
         ExplicitTop = 302
       end
       object Label2: TLabel
@@ -331,7 +331,7 @@ object FormLogin: TFormLogin
         ParentFont = False
       end
     end
-    object Edit1: TEdit
+    object edtUSUARIO: TEdit
       Left = 271
       Top = 128
       Width = 305
@@ -346,7 +346,7 @@ object FormLogin: TFormLogin
       ParentFont = False
       TabOrder = 2
     end
-    object Edit2: TEdit
+    object edtSENHA: TEdit
       Left = 271
       Top = 217
       Width = 305
@@ -356,9 +356,26 @@ object FormLogin: TFormLogin
       Font.Height = -16
       Font.Name = 'Tahoma'
       Font.Style = []
+      NumbersOnly = True
       ParentFont = False
       PasswordChar = '*'
       TabOrder = 3
+    end
+  end
+  object QueryLogin: TADOQuery
+    Connection = dmDados.adoConexao
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      'SELECT US_USUARIO, US_SENHA FROM USUARIO')
+    Left = 568
+    Top = 296
+    object QueryLoginUS_USUARIO: TStringField
+      FieldName = 'US_USUARIO'
+      Size = 30
+    end
+    object QueryLoginUS_SENHA: TIntegerField
+      FieldName = 'US_SENHA'
     end
   end
 end

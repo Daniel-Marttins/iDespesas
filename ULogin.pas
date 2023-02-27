@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,
-  Vcl.Imaging.pngimage, UCadastro;
+  Vcl.Imaging.pngimage, UCadastro, Data.DB, Data.Win.ADODB;
 
 type
   TFormLogin = class(TForm)
@@ -20,8 +20,11 @@ type
     Label4: TLabel;
     Label5: TLabel;
     Label6: TLabel;
-    Edit1: TEdit;
-    Edit2: TEdit;
+    edtUSUARIO: TEdit;
+    edtSENHA: TEdit;
+    QueryLogin: TADOQuery;
+    QueryLoginUS_USUARIO: TStringField;
+    QueryLoginUS_SENHA: TIntegerField;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
   private
     { Private declarations }
@@ -46,7 +49,12 @@ begin
   try
     if Key = VK_RETURN then
       begin
-        ShowMessage('Logado!')
+        QueryLogin.SQL.Clear;
+        QueryLogin.SQL.Text := 'SELECT US_USUARIO, US_SENHA FROM USUARIO WHERE US_USUARIO = '+ QuotedStr(edtUSUARIO.Text) + ' AND US_SENHA = '+ QuotedStr(edtSENHA.Text);
+        QueryLogin.Open;
+
+        if QueryLogin.RecordCount = 1 then
+          ShowMessage('Logado');
       end;
     if Key = VK_F4 then
     begin

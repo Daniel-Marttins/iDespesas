@@ -31,7 +31,6 @@ type
     btnConfirmar: TButton;
     datNASCIMENTO: TDateTimePicker;
     QueryCadastro: TADOQuery;
-    adoConexao: TADOConnection;
     QueryCadastroUS_NOME: TStringField;
     QueryCadastroUS_USUARIO: TStringField;
     QueryCadastroUS_EMAIL: TStringField;
@@ -73,30 +72,40 @@ end;
 procedure TFormCadastro.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
-  if not QueryCadastro.Active then
-    QueryCadastro.Open;
-
     if Key = VK_F5 then
     begin
-      try
-        QueryCadastro.Append;
+      QueryCadastro.SQL.Clear;
+      QueryCadastro.SQL.Text := 'SELECT * FROM USUARIO WHERE US_USUARIO = ' + QuotedStr(edtUSUARIO.Text);
+      QueryCadastro.Open;
 
-        QueryCadastroUS_NOME.AsString := edtNOME.Text;
-        QueryCadastroUS_USUARIO.AsString := edtUSUARIO.Text;
-        QueryCadastroUS_EMAIL.AsString := edtEMAIL.Text;
-        QueryCadastroUS_SENHA.AsString := edtSENHA.Text;
-        QueryCadastroUS_NASCIMENTO.AsString := datNASCIMENTO.Format;
-        QueryCadastroUS_UF.AsString := cboUF.Text;
-        QueryCadastroUS_ENDERECO.AsString := edtENDERECO.Text;
+      if QueryCadastro.RecordCount > 0 then
+      begin
+        ShowMessage('Usuário já existe, tente outro nome!');
+        Exit;
+      end
 
-        QueryCadastro.Post;
+      else
+      begin
+        try
+          QueryCadastro.Append;
 
-        ShowMessage('Cadastro Realizado com Sucesso!');
-        FormCadastro.Close;
-        FormLogin.Visible := True;
-      except
-        On e: Exception do
-          showMessage('Não Foi Possivel Concluir o Cadastro, Tente Novamente mais tarde!');
+          QueryCadastroUS_NOME.AsString := edtNOME.Text;
+          QueryCadastroUS_USUARIO.AsString := edtUSUARIO.Text;
+          QueryCadastroUS_EMAIL.AsString := edtEMAIL.Text;
+          QueryCadastroUS_SENHA.AsString := edtSENHA.Text;
+          QueryCadastroUS_NASCIMENTO.AsString := datNASCIMENTO.Format;
+          QueryCadastroUS_UF.AsString := cboUF.Text;
+          QueryCadastroUS_ENDERECO.AsString := edtENDERECO.Text;
+
+          QueryCadastro.Post;
+
+          ShowMessage('Cadastro Realizado com Sucesso!');
+          FormCadastro.Close;
+          FormLogin.Visible := True;
+        except
+          On e: Exception do
+            showMessage('Não Foi Possivel Concluir o Cadastro, Tente Novamente mais tarde!');
+        end;
       end;
     end;
 end;

@@ -73,14 +73,20 @@ end;
 procedure TFormCadastro.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
-  if not QueryCadastro.Active then
-    QueryCadastro.Open;
-
-  try
     if Key = VK_F5 then
     begin
-      try
+      QueryCadastro.SQL.Clear;
+      QueryCadastro.SQL.Text := 'SELECT * FROM USUARIO WHERE US_USUARIO = ' + QuotedStr(edtUSUARIO.Text);
+      QueryCadastro.Open;
+
+      if QueryCadastro.RecordCount > 0 then
         begin
+          ShowMessage('Usuário já existe, tente outro nome!');
+          Exit;
+        end
+      else
+      begin
+        try
           QueryCadastro.Append;
 
           QueryCadastroUS_NOME.AsString := edtNOME.Text;
@@ -93,18 +99,15 @@ begin
 
           QueryCadastro.Post;
 
-          ShowMessage('Cadastr Realizado com Sucesso!');
+          ShowMessage('Cadastro Realizado com Sucesso!');
           FormCadastro.Close;
           FormLogin.Visible := True;
+        except
+          On e: Exception do
+            showMessage('Não Foi Possivel Concluir o Cadastro, Tente Novamente mais tarde!');
         end;
-      except
-        On e: Exception do
-          showMessage('Não Foi Possivel Concluir o Cadastro, Tente Novamente mais tarde!');
       end;
     end;
-  finally;
-  end;
-
 end;
 
 end.

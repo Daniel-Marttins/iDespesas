@@ -7,11 +7,12 @@ uses
   FireDAC.Stan.Option, FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf,
   FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys,
   FireDAC.VCLUI.Wait, Data.DB, FireDAC.Comp.Client, FireDAC.Phys.FB,
-  FireDAC.Phys.FBDef, Data.Win.ADODB;
+  FireDAC.Phys.FBDef, Data.Win.ADODB, FireDAC.Phys.MSAcc, FireDAC.Phys.MSAccDef,
+  FireDAC.Phys.MySQLDef, FireDAC.Comp.UI, FireDAC.Phys.MySQL;
 
 type
-  TDataModule1 = class(TDataModule)
-    dmConexao: TADOConnection;
+  TdmDados = class(TDataModule)
+    adoConexao: TADOConnection;
   private
     { Private declarations }
   public
@@ -19,7 +20,7 @@ type
   end;
 
 var
-  DataModule1: TDataModule1;
+  dmDados: TdmDados;
 
 implementation
 

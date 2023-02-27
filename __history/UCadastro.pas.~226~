@@ -73,36 +73,36 @@ end;
 procedure TFormCadastro.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
-  if not QueryCadastro.Active then
-    QueryCadastro.Open;
-
-  try
     if Key = VK_F5 then
     begin
+      QueryCadastro.SQL.Clear;
+      QueryCadastro.SQL.Text := 'SELECT * FROM USUARIO WHERE US_USUARIO = ' + QuotedStr(edtUSUARIO.Text);
+      QueryCadastro.Open;
+      if QueryCadastro.RecordCount > 0 then
+        begin
+          ShowMessage('');
+        end;
       try
-          QueryCadastro.Append;
+        QueryCadastro.Append;
 
-          QueryCadastroUS_NOME.AsString := edtNOME.Text;
-          QueryCadastroUS_USUARIO.AsString := edtUSUARIO.Text;
-          QueryCadastroUS_EMAIL.AsString := edtEMAIL.Text;
-          QueryCadastroUS_SENHA.AsString := edtSENHA.Text;
-          QueryCadastroUS_NASCIMENTO.AsString := datNASCIMENTO.Format;
-          QueryCadastroUS_UF.AsString := cboUF.Text;
-          QueryCadastroUS_ENDERECO.AsString := edtENDERECO.Text;
+        QueryCadastroUS_NOME.AsString := edtNOME.Text;
+        QueryCadastroUS_USUARIO.AsString := edtUSUARIO.Text;
+        QueryCadastroUS_EMAIL.AsString := edtEMAIL.Text;
+        QueryCadastroUS_SENHA.AsString := edtSENHA.Text;
+        QueryCadastroUS_NASCIMENTO.AsString := datNASCIMENTO.Format;
+        QueryCadastroUS_UF.AsString := cboUF.Text;
+        QueryCadastroUS_ENDERECO.AsString := edtENDERECO.Text;
 
-          QueryCadastro.Post;
+        QueryCadastro.Post;
 
-          ShowMessage('Cadastr Realizado com Sucesso!');
-          FormCadastro.Close;
-          FormLogin.Visible := True;
+        ShowMessage('Cadastro Realizado com Sucesso!');
+        FormCadastro.Close;
+        FormLogin.Visible := True;
       except
         On e: Exception do
           showMessage('Não Foi Possivel Concluir o Cadastro, Tente Novamente mais tarde!');
       end;
     end;
-  finally;
-  end;
-
 end;
 
 end.

@@ -1,7 +1,7 @@
 object dmDados: TdmDados
   OldCreateOrder = False
-  Height = 75
-  Width = 80
+  Height = 80
+  Width = 91
   object adoConexao: TADOConnection
     Connected = True
     ConnectionString = 

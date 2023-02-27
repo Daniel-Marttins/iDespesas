@@ -2,7 +2,7 @@ object FormCadastro: TFormCadastro
   Left = 0
   Top = 0
   BorderIcons = [biSystemMenu, biMinimize]
-  Caption = 'iDispesas - Novo Usu'#225'rio'
+  Caption = 'ado'
   ClientHeight = 353
   ClientWidth = 551
   Color = clBtnFace
@@ -26,8 +26,6 @@ object FormCadastro: TFormCadastro
     Color = clSkyBlue
     ParentBackground = False
     TabOrder = 0
-    ExplicitLeft = 8
-    ExplicitTop = -8
     object Label1: TLabel
       Left = 21
       Top = 77
@@ -84,7 +82,7 @@ object FormCadastro: TFormCadastro
       Left = 184
       Top = 238
       Width = 27
-      Height = 18
+      Height = 19
       Caption = 'UF:'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWhite
@@ -145,15 +143,6 @@ object FormCadastro: TFormCadastro
       ParentFont = False
       TabOrder = 1
     end
-    object datNASCIMENTO: TDateTimePicker
-      Left = 21
-      Top = 263
-      Width = 140
-      Height = 24
-      Date = 44982.000000000000000000
-      Time = 0.393773171294014900
-      TabOrder = 2
-    end
     object edtUSUARIO: TEdit
       Left = 381
       Top = 109
@@ -165,7 +154,7 @@ object FormCadastro: TFormCadastro
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 3
+      TabOrder = 2
     end
     object edtSENHA: TEdit
       Left = 381
@@ -179,7 +168,7 @@ object FormCadastro: TFormCadastro
       Font.Style = []
       ParentFont = False
       PasswordChar = '*'
-      TabOrder = 4
+      TabOrder = 3
     end
     object cboUF: TComboBox
       Left = 184
@@ -203,7 +192,7 @@ object FormCadastro: TFormCadastro
       ParentFont = False
       ParentShowHint = False
       ShowHint = False
-      TabOrder = 5
+      TabOrder = 4
       TabStop = False
       Items.Strings = (
         'RO'
@@ -246,7 +235,7 @@ object FormCadastro: TFormCadastro
       Font.Style = []
       ParentFont = False
       PasswordChar = '*'
-      TabOrder = 6
+      TabOrder = 5
     end
     object Panel2: TPanel
       Left = 1
@@ -254,7 +243,7 @@ object FormCadastro: TFormCadastro
       Width = 549
       Height = 40
       Align = alTop
-      TabOrder = 7
+      TabOrder = 6
       object Image2: TImage
         Left = 1
         Top = 1
@@ -331,8 +320,63 @@ object FormCadastro: TFormCadastro
       Font.Name = 'Tahoma'
       Font.Style = [fsBold]
       ParentFont = False
-      TabOrder = 8
+      TabOrder = 7
       OnClick = btnConfirmarClick
     end
+    object datNASCIMENTO: TDateTimePicker
+      Left = 21
+      Top = 263
+      Width = 140
+      Height = 24
+      Date = 44982.000000000000000000
+      Time = 0.393773171294014900
+      TabOrder = 8
+    end
+  end
+  object QueryCadastro: TADOQuery
+    Connection = adoConexao
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      'SELECT * FROM USUARIO;')
+    Left = 513
+    Top = 6
+    object QueryCadastroUS_NOME: TStringField
+      FieldName = 'US_NOME'
+      Size = 50
+    end
+    object QueryCadastroUS_USUARIO: TStringField
+      FieldName = 'US_USUARIO'
+      Size = 30
+    end
+    object QueryCadastroUS_EMAIL: TStringField
+      FieldName = 'US_EMAIL'
+      Size = 50
+    end
+    object QueryCadastroUS_SENHA: TIntegerField
+      FieldName = 'US_SENHA'
+    end
+    object QueryCadastroUS_NASCIMENTO: TWideStringField
+      FieldName = 'US_NASCIMENTO'
+      Size = 10
+    end
+    object QueryCadastroUS_UF: TStringField
+      FieldName = 'US_UF'
+      Size = 10
+    end
+    object QueryCadastroUS_ENDERECO: TStringField
+      FieldName = 'US_ENDERECO'
+      Size = 50
+    end
+  end
+  object adoConexao: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=SQLOLEDB.1;Password=id-0601;Persist Security Info=True;' +
+      'User ID=sa;Initial Catalog=iDespesas;Data Source=NOXVOIDIA'
+    LoginPrompt = False
+    Provider = 'SQLOLEDB.1'
+    Left = 472
+    Top = 6
   end
 end

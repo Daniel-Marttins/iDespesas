@@ -1,0 +1,18 @@
+object dmDados: TdmDados
+  OldCreateOrder = False
+  Height = 192
+  Width = 273
+  object adoConexao: TADOConnection
+    ConnectionString = 
+      'Drive={MySQL ODBC 8.1 Driver};Server=LocalHost;Database=idespesa' +
+      's;UID=root;'
+    LoginPrompt = False
+    Left = 8
+    Top = 8
+  end
+  object FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink
+    VendorLib = 'C:\iDespesas\dlls\libmysql.dll'
+    Left = 56
+    Top = 48
+  end
+end

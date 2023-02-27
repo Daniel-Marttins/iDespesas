@@ -1,0 +1,9 @@
+object dmDados: TdmDados
+  OldCreateOrder = False
+  Height = 80
+  Width = 91
+  object adoConexao: TADOConnection
+    Left = 24
+    Top = 24
+  end
+end

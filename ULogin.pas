@@ -36,6 +36,8 @@ implementation
 
 {$R *.dfm}
 
+uses UDados;
+
 procedure TFormLogin.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin

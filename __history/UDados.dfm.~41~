@@ -3,7 +3,6 @@ object dmDados: TdmDados
   Height = 75
   Width = 80
   object adoConexao: TADOConnection
-    Connected = True
     ConnectionString = 
       'Provider=SQLOLEDB.1;Password=id-0601;Persist Security Info=True;' +
       'User ID=sa;Initial Catalog=iDespesas;Data Source=.\SQLEXPRESS'

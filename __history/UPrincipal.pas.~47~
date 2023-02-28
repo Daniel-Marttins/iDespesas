@@ -25,8 +25,7 @@ uses
   dxSkinWhiteprint, dxSkinXmas2008Blue, cxStyles, cxCustomData, cxFilter,
   cxData, cxDataStorage, cxEdit, cxNavigator, dxDateRanges,
   dxScrollbarAnnotations, cxDBData, cxGridLevel, cxClasses, cxGridCustomView,
-  cxGridCustomTableView, cxGridTableView, cxGridDBTableView, cxGrid,
-  dxGDIPlusClasses;
+  cxGridCustomTableView, cxGridTableView, cxGridDBTableView, cxGrid;
 
 type
   TFormPrincipal = class(TForm)
@@ -58,16 +57,6 @@ type
     cxGrid1DBTableView1: TcxGridDBTableView;
     cxGrid1Level1: TcxGridLevel;
     cxGrid1: TcxGrid;
-    Image2: TImage;
-    Image3: TImage;
-    Label4: TLabel;
-    Label5: TLabel;
-    Label6: TLabel;
-    Panel4: TPanel;
-    Panel7: TPanel;
-    Image4: TImage;
-    Image5: TImage;
-    Image6: TImage;
     procedure TabControl1Change(Sender: TObject);
   private
     { Private declarations }

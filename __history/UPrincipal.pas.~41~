@@ -20,9 +20,17 @@ type
     pnData: TPanel;
     tituloData: TLabel;
     DateTimePicker1: TDateTimePicker;
+    pnRendimentos: TPanel;
+    pnReceitas: TPanel;
+    pnDespesas: TPanel;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    pnReceita_2: TPanel;
+    pnInfo_2: TPanel;
+    pnInfo_3: TPanel;
+    pnReceita_1: TPanel;
     Panel3: TPanel;
-    Panel7: TPanel;
-    Panel8: TPanel;
     procedure TabControl1Change(Sender: TObject);
   private
     { Private declarations }

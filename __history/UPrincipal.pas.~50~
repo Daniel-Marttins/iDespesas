@@ -65,9 +65,6 @@ type
     Label6: TLabel;
     Panel4: TPanel;
     Panel7: TPanel;
-    Image4: TImage;
-    Image5: TImage;
-    Image6: TImage;
     procedure TabControl1Change(Sender: TObject);
   private
     { Private declarations }

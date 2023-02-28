@@ -26,6 +26,14 @@ type
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
+    pnReceita_2: TPanel;
+    pnInfo_2: TPanel;
+    pnInfo_3: TPanel;
+    pnReceita_1: TPanel;
+    Panel3: TPanel;
+    ProgressBar1: TProgressBar;
+    ProgressBar2: TProgressBar;
+    ProgressBar3: TProgressBar;
     procedure TabControl1Change(Sender: TObject);
   private
     { Private declarations }

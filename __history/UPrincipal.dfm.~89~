@@ -261,11 +261,10 @@ object FormPrincipal: TFormPrincipal
           Align = alTop
           TabOrder = 1
           object Image1: TImage
-            AlignWithMargins = True
-            Left = 4
-            Top = 4
+            Left = 1
+            Top = 1
             Width = 40
-            Height = 33
+            Height = 39
             Align = alLeft
             Center = True
             Picture.Data = {
@@ -304,14 +303,12 @@ object FormPrincipal: TFormPrincipal
               CB2146CC5300390EE07600AE2D29EB00E620C9B41074E6741F596ED66F07DFAF
               0DBC2FA58A550438839FC88ADB501DB13341527F1FF7B08706F80FB92452BACA
               6F79140000000049454E44AE426082}
-            ExplicitLeft = 1
-            ExplicitTop = 1
             ExplicitHeight = 31
           end
           object Label4: TLabel
-            Left = 47
+            Left = 41
             Top = 1
-            Width = 52
+            Width = 58
             Height = 39
             Align = alClient
             Alignment = taCenter
@@ -347,11 +344,10 @@ object FormPrincipal: TFormPrincipal
           Align = alTop
           TabOrder = 2
           object Image3: TImage
-            AlignWithMargins = True
-            Left = 4
-            Top = 4
+            Left = 1
+            Top = 1
             Width = 40
-            Height = 33
+            Height = 39
             Align = alLeft
             Center = True
             Picture.Data = {
@@ -408,9 +404,9 @@ object FormPrincipal: TFormPrincipal
             ExplicitHeight = 31
           end
           object Label6: TLabel
-            Left = 47
+            Left = 41
             Top = 1
-            Width = 52
+            Width = 58
             Height = 39
             Align = alClient
             Alignment = taCenter
@@ -472,17 +468,6 @@ object FormPrincipal: TFormPrincipal
           Height = 41
           Align = alTop
           TabOrder = 0
-          object Image6: TImage
-            AlignWithMargins = True
-            Left = 4
-            Top = 4
-            Width = 40
-            Height = 33
-            Align = alLeft
-            ExplicitLeft = 9
-            ExplicitTop = 2
-            ExplicitHeight = 39
-          end
         end
         object Panel4: TPanel
           AlignWithMargins = True
@@ -495,17 +480,6 @@ object FormPrincipal: TFormPrincipal
           ExplicitLeft = 2
           ExplicitTop = 29
           ExplicitWidth = 259
-          object Image5: TImage
-            AlignWithMargins = True
-            Left = 4
-            Top = 4
-            Width = 40
-            Height = 33
-            Align = alLeft
-            ExplicitLeft = 9
-            ExplicitTop = 2
-            ExplicitHeight = 39
-          end
         end
         object Panel7: TPanel
           AlignWithMargins = True
@@ -518,17 +492,6 @@ object FormPrincipal: TFormPrincipal
           ExplicitLeft = 2
           ExplicitTop = 29
           ExplicitWidth = 259
-          object Image4: TImage
-            AlignWithMargins = True
-            Left = 4
-            Top = 4
-            Width = 40
-            Height = 33
-            Align = alLeft
-            ExplicitLeft = 1
-            ExplicitTop = 1
-            ExplicitHeight = 39
-          end
         end
       end
     end

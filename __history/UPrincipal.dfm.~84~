@@ -2,8 +2,8 @@ object FormPrincipal: TFormPrincipal
   Left = 0
   Top = 0
   Caption = 'iDespesas'
-  ClientHeight = 548
-  ClientWidth = 743
+  ClientHeight = 532
+  ClientWidth = 750
   Color = clBtnFace
   DefaultMonitor = dmDesktop
   Font.Charset = DEFAULT_CHARSET
@@ -19,8 +19,8 @@ object FormPrincipal: TFormPrincipal
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 743
-    Height = 548
+    Width = 750
+    Height = 532
     Align = alClient
     Color = clSkyBlue
     ParentBackground = False
@@ -30,8 +30,8 @@ object FormPrincipal: TFormPrincipal
     object Panel2: TPanel
       AlignWithMargins = True
       Left = 4
-      Top = 524
-      Width = 735
+      Top = 508
+      Width = 742
       Height = 20
       Align = alBottom
       Color = clActiveCaption
@@ -42,10 +42,10 @@ object FormPrincipal: TFormPrincipal
     end
     object pnInfosDados: TPanel
       AlignWithMargins = True
-      Left = 466
+      Left = 473
       Top = 4
       Width = 273
-      Height = 514
+      Height = 498
       Align = alRight
       BevelOuter = bvSpace
       BiDiMode = bdLeftToRight
@@ -98,12 +98,11 @@ object FormPrincipal: TFormPrincipal
       object pnRendimentos: TPanel
         AlignWithMargins = True
         Left = 4
-        Top = 386
+        Top = 351
         Width = 261
-        Height = 119
+        Height = 138
         Align = alTop
-        Color = clHotLight
-        ParentBackground = False
+        AutoSize = True
         TabOrder = 1
         object Label3: TLabel
           AlignWithMargins = True
@@ -119,19 +118,15 @@ object FormPrincipal: TFormPrincipal
           Font.Name = 'Tahoma'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitTop = 1
+          ExplicitWidth = 85
         end
         object pnInfo_3: TPanel
-          AlignWithMargins = True
-          Left = 4
-          Top = 24
-          Width = 253
-          Height = 91
+          Left = 1
+          Top = 21
+          Width = 259
+          Height = 116
           Align = alClient
           TabOrder = 0
-          ExplicitLeft = -6
-          ExplicitWidth = 259
-          ExplicitHeight = 88
         end
       end
       object pnReceitas: TPanel
@@ -142,8 +137,6 @@ object FormPrincipal: TFormPrincipal
         Height = 157
         Align = alTop
         AutoSize = True
-        Color = clTeal
-        ParentBackground = False
         TabOrder = 2
         object Label1: TLabel
           AlignWithMargins = True
@@ -223,24 +216,17 @@ object FormPrincipal: TFormPrincipal
             ExplicitHeight = 30
           end
           object Label5: TLabel
-            Left = 47
-            Top = 1
-            Width = 55
-            Height = 39
-            Align = alClient
-            Alignment = taCenter
+            Left = 54
+            Top = 12
+            Width = 39
+            Height = 16
             Caption = 'Verba:'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWhite
             Font.Height = -13
             Font.Name = 'Tahoma'
-            Font.Style = [fsBold]
+            Font.Style = []
             ParentFont = False
-            Layout = tlCenter
-            ExplicitLeft = 54
-            ExplicitTop = 12
-            ExplicitWidth = 44
-            ExplicitHeight = 16
           end
           object ProgressBar2: TProgressBar
             AlignWithMargins = True
@@ -261,11 +247,10 @@ object FormPrincipal: TFormPrincipal
           Align = alTop
           TabOrder = 1
           object Image1: TImage
-            AlignWithMargins = True
-            Left = 4
-            Top = 4
+            Left = 1
+            Top = 1
             Width = 40
-            Height = 33
+            Height = 39
             Align = alLeft
             Center = True
             Picture.Data = {
@@ -304,29 +289,20 @@ object FormPrincipal: TFormPrincipal
               CB2146CC5300390EE07600AE2D29EB00E620C9B41074E6741F596ED66F07DFAF
               0DBC2FA58A550438839FC88ADB501DB13341527F1FF7B08706F80FB92452BACA
               6F79140000000049454E44AE426082}
-            ExplicitLeft = 1
-            ExplicitTop = 1
             ExplicitHeight = 31
           end
           object Label4: TLabel
-            Left = 47
-            Top = 1
-            Width = 52
-            Height = 39
-            Align = alClient
-            Alignment = taCenter
+            Left = 50
+            Top = 12
+            Width = 39
+            Height = 16
             Caption = 'Verba:'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWhite
             Font.Height = -13
             Font.Name = 'Tahoma'
-            Font.Style = [fsBold]
+            Font.Style = []
             ParentFont = False
-            Layout = tlCenter
-            ExplicitLeft = 50
-            ExplicitTop = 12
-            ExplicitWidth = 44
-            ExplicitHeight = 16
           end
           object ProgressBar1: TProgressBar
             AlignWithMargins = True
@@ -347,11 +323,10 @@ object FormPrincipal: TFormPrincipal
           Align = alTop
           TabOrder = 2
           object Image3: TImage
-            AlignWithMargins = True
-            Left = 4
-            Top = 4
+            Left = 1
+            Top = 1
             Width = 40
-            Height = 33
+            Height = 39
             Align = alLeft
             Center = True
             Picture.Data = {
@@ -408,24 +383,17 @@ object FormPrincipal: TFormPrincipal
             ExplicitHeight = 31
           end
           object Label6: TLabel
-            Left = 47
-            Top = 1
-            Width = 52
-            Height = 39
-            Align = alClient
-            Alignment = taCenter
+            Left = 51
+            Top = 12
+            Width = 39
+            Height = 16
             Caption = 'Verba:'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWhite
             Font.Height = -13
             Font.Name = 'Tahoma'
-            Font.Style = [fsBold]
+            Font.Style = []
             ParentFont = False
-            Layout = tlCenter
-            ExplicitLeft = 51
-            ExplicitTop = 12
-            ExplicitWidth = 44
-            ExplicitHeight = 16
           end
           object ProgressBar3: TProgressBar
             AlignWithMargins = True
@@ -443,10 +411,9 @@ object FormPrincipal: TFormPrincipal
         Left = 4
         Top = 212
         Width = 261
-        Height = 168
+        Height = 133
         Align = alTop
-        Color = clMaroon
-        ParentBackground = False
+        AutoSize = True
         TabOrder = 3
         object Label2: TLabel
           AlignWithMargins = True
@@ -465,70 +432,12 @@ object FormPrincipal: TFormPrincipal
           ExplicitWidth = 107
         end
         object pnInfo_2: TPanel
-          AlignWithMargins = True
-          Left = 4
-          Top = 118
-          Width = 253
-          Height = 41
-          Align = alTop
+          Left = 1
+          Top = 21
+          Width = 259
+          Height = 111
+          Align = alClient
           TabOrder = 0
-          object Image6: TImage
-            AlignWithMargins = True
-            Left = 4
-            Top = 4
-            Width = 40
-            Height = 33
-            Align = alLeft
-            ExplicitLeft = 9
-            ExplicitTop = 2
-            ExplicitHeight = 39
-          end
-        end
-        object Panel4: TPanel
-          AlignWithMargins = True
-          Left = 4
-          Top = 71
-          Width = 253
-          Height = 41
-          Align = alTop
-          TabOrder = 1
-          ExplicitLeft = 2
-          ExplicitTop = 29
-          ExplicitWidth = 259
-          object Image5: TImage
-            AlignWithMargins = True
-            Left = 4
-            Top = 4
-            Width = 40
-            Height = 33
-            Align = alLeft
-            ExplicitLeft = 9
-            ExplicitTop = 2
-            ExplicitHeight = 39
-          end
-        end
-        object Panel7: TPanel
-          AlignWithMargins = True
-          Left = 4
-          Top = 24
-          Width = 253
-          Height = 41
-          Align = alTop
-          TabOrder = 2
-          ExplicitLeft = 2
-          ExplicitTop = 29
-          ExplicitWidth = 259
-          object Image4: TImage
-            AlignWithMargins = True
-            Left = 4
-            Top = 4
-            Width = 40
-            Height = 33
-            Align = alLeft
-            ExplicitLeft = 1
-            ExplicitTop = 1
-            ExplicitHeight = 39
-          end
         end
       end
     end
@@ -536,8 +445,8 @@ object FormPrincipal: TFormPrincipal
       AlignWithMargins = True
       Left = 4
       Top = 4
-      Width = 456
-      Height = 514
+      Width = 463
+      Height = 498
       Align = alClient
       Color = clGradientInactiveCaption
       ParentBackground = False
@@ -548,7 +457,7 @@ object FormPrincipal: TFormPrincipal
         AlignWithMargins = True
         Left = 4
         Top = 4
-        Width = 448
+        Width = 455
         Height = 93
         Align = alTop
         BiDiMode = bdLeftToRight
@@ -575,7 +484,7 @@ object FormPrincipal: TFormPrincipal
         object Panel6: TPanel
           Left = 4
           Top = 4
-          Width = 440
+          Width = 447
           Height = 67
           Align = alClient
           Color = clActiveCaption
@@ -587,7 +496,7 @@ object FormPrincipal: TFormPrincipal
             AlignWithMargins = True
             Left = 4
             Top = 4
-            Width = 432
+            Width = 439
             Height = 59
             Align = alClient
             TabOrder = 0
@@ -600,8 +509,8 @@ object FormPrincipal: TFormPrincipal
         AlignWithMargins = True
         Left = 4
         Top = 103
-        Width = 448
-        Height = 407
+        Width = 455
+        Height = 391
         Align = alClient
         TabOrder = 1
         ExplicitWidth = 9

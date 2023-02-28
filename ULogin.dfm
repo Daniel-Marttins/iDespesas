@@ -363,6 +363,7 @@ object FormLogin: TFormLogin
     end
   end
   object QueryLogin: TADOQuery
+    Active = True
     Connection = dmDados.adoConexao
     CursorType = ctStatic
     Parameters = <>

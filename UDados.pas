@@ -26,7 +26,7 @@ implementation
 
 {%CLASSGROUP 'Vcl.Controls.TControl'}
 
-uses UCadastro, ULogin;
+uses UCadastro, ULogin, UPrincipal;
 
 {$R *.dfm}
 

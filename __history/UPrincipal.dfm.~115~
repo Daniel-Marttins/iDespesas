@@ -25,8 +25,6 @@ object FormPrincipal: TFormPrincipal
     Color = clSkyBlue
     ParentBackground = False
     TabOrder = 0
-    ExplicitWidth = 304
-    ExplicitHeight = 201
     object Panel2: TPanel
       AlignWithMargins = True
       Left = 4
@@ -37,8 +35,6 @@ object FormPrincipal: TFormPrincipal
       Color = clActiveCaption
       ParentBackground = False
       TabOrder = 0
-      ExplicitTop = 177
-      ExplicitWidth = 296
     end
     object pnInfosDados: TPanel
       AlignWithMargins = True
@@ -54,8 +50,6 @@ object FormPrincipal: TFormPrincipal
       ParentBiDiMode = False
       ParentBackground = False
       TabOrder = 1
-      ExplicitLeft = 27
-      ExplicitHeight = 167
       object pnData: TPanel
         Left = 1
         Top = 1
@@ -119,7 +113,7 @@ object FormPrincipal: TFormPrincipal
           Font.Name = 'Tahoma'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitTop = 1
+          ExplicitWidth = 85
         end
         object pnInfo_3: TPanel
           AlignWithMargins = True
@@ -129,9 +123,6 @@ object FormPrincipal: TFormPrincipal
           Height = 91
           Align = alClient
           TabOrder = 0
-          ExplicitLeft = -6
-          ExplicitWidth = 259
-          ExplicitHeight = 88
         end
       end
       object pnReceitas: TPanel
@@ -225,7 +216,7 @@ object FormPrincipal: TFormPrincipal
           object Label5: TLabel
             Left = 47
             Top = 1
-            Width = 55
+            Width = 70
             Height = 39
             Align = alClient
             Alignment = taCenter
@@ -237,16 +228,15 @@ object FormPrincipal: TFormPrincipal
             Font.Style = [fsBold]
             ParentFont = False
             Layout = tlCenter
-            ExplicitLeft = 54
-            ExplicitTop = 12
-            ExplicitWidth = 44
-            ExplicitHeight = 16
+            ExplicitLeft = 50
+            ExplicitTop = 0
+            ExplicitWidth = 90
           end
-          object ProgressBar2: TProgressBar
+          object pnInfosReceitas_2: TPanel
             AlignWithMargins = True
-            Left = 105
+            Left = 120
             Top = 4
-            Width = 150
+            Width = 135
             Height = 33
             Align = alRight
             TabOrder = 0
@@ -261,10 +251,11 @@ object FormPrincipal: TFormPrincipal
           Align = alTop
           TabOrder = 1
           object Image1: TImage
-            Left = 1
-            Top = 1
+            AlignWithMargins = True
+            Left = 4
+            Top = 4
             Width = 40
-            Height = 39
+            Height = 33
             Align = alLeft
             Center = True
             Picture.Data = {
@@ -303,12 +294,14 @@ object FormPrincipal: TFormPrincipal
               CB2146CC5300390EE07600AE2D29EB00E620C9B41074E6741F596ED66F07DFAF
               0DBC2FA58A550438839FC88ADB501DB13341527F1FF7B08706F80FB92452BACA
               6F79140000000049454E44AE426082}
+            ExplicitLeft = 1
+            ExplicitTop = 1
             ExplicitHeight = 31
           end
           object Label4: TLabel
-            Left = 41
+            Left = 47
             Top = 1
-            Width = 58
+            Width = 67
             Height = 39
             Align = alClient
             Alignment = taCenter
@@ -320,19 +313,19 @@ object FormPrincipal: TFormPrincipal
             Font.Style = [fsBold]
             ParentFont = False
             Layout = tlCenter
-            ExplicitLeft = 50
-            ExplicitTop = 12
-            ExplicitWidth = 44
-            ExplicitHeight = 16
+            ExplicitWidth = 87
           end
-          object ProgressBar1: TProgressBar
+          object pnInfosReceitas_1: TPanel
             AlignWithMargins = True
-            Left = 102
+            Left = 117
             Top = 4
-            Width = 147
+            Width = 132
             Height = 33
             Align = alRight
             TabOrder = 0
+            ExplicitLeft = 120
+            ExplicitTop = 1
+            ExplicitHeight = 39
           end
         end
         object Panel3: TPanel
@@ -344,69 +337,59 @@ object FormPrincipal: TFormPrincipal
           Align = alTop
           TabOrder = 2
           object Image3: TImage
-            Left = 1
-            Top = 1
+            AlignWithMargins = True
+            Left = 4
+            Top = 4
             Width = 40
-            Height = 39
+            Height = 33
             Align = alLeft
             Center = True
             Picture.Data = {
               0D546478536D617274496D61676589504E470D0A1A0A0000000D494844520000
-              0020000000200806000000737A7AF40000000970485973000000EC000000EC01
-              792871BD0000001974455874536F667477617265007777772E696E6B73636170
-              652E6F72679BEE3C1A00000577494441545885B5965D8C5C6519C77FCFFB9E73
-              E6CCCCEE6C67DADDB6486CA9D20FC55DDB6010A5D144545012DD842E17850D6B
-              ADF52394D4786562628C31465A42840B091724B6EBC55E80C418C2D522212D25
-              A4D92E90502A10AAD0A6BBD0D9EEEC7C9D39EFE3C52CD3F9DA6D07E1BD98CC79
-              9EF7F9FF7F79DE8F73841EC6236F3DFB1563B815C79C8ABB0D640CF0119E02F7
-              AFF3A5C2CEC8559F3D72D3F873D7AAE9F50260447FA8CAAF11A0FE531FCAC4A5
-              5A79A2E82A84C6DB095C3380E905C0B3EE3030DF1EAFA9235F2D82A0B1AD1EE8
-              45B327809F6FBAEB12A2BF698F7F585DC2A124C43E7E64DBC41B9F1A00C0C6CD
-              4B4F003300AAB0582B6B212E63917C2D1FFCB257BD9EF600C0C9376BD9389E4B
-              B9D8512C2DE11409839072A5A465BD3C04BCDB8B5E4F1D38747C2A1945D13371
-              AC5B0B8502892049324C52299708C36436B4EEE4BEE30FE73E15803D5353361E
-              284D025FAB46153CCFC37A1ED67AF84140AD16914884EB11FFE53DC71F4E7EE2
-              001BBF50FC03CA28402D8AF0834423E705017154C3F7138867B7F45BFFE94F14
-              E0E0EB4FDE01F2AB8F9ED539AC357C3EFC2C5F4C7D0E2306454195304C8AC6FA
-              9D89138F1EEA09404F1FDDE566FFF6949E3EBABB79C2CF6627B360FEDA3C374C
-              A5110CB7F4DFC4ADFDC38808C9541A443062F07C5F44DD9F7EF4E2A3D7356BE9
-              E9A3BB973D767576C0D8AF838EAA98BFEBF474E374F8527B1065B05928E925B9
-              67F0BB0CFA59FA6C8AF1A1BBC8F8FD8DBCEFFB2878783CD2309F9EF654CC33A0
-              A375AF76802B23C7D0DC3A8007CE1ECB201C6C9F3092BE910DFE5A5E2BFE9B93
-              8BAF62B1A46CD8C87BD647109CD3BB7FFCD29FAF0758D6CCB66BAD7A0F48251E
-              EB56945E369B593AC37C94E7C4E26C5B218835481C8BAADC0FFC7E258FAB6C42
-              B9A35BF46CE93F2870F7DADBF9C6C02ED678994E61630150CCBED51C5604F8ED
-              F4B407FAAD6EB9F7AB73FCE3C3E729BA323BD33B181FFC3E37245AF61BD69865
-              8078D34F5E793CB5924FE712D42A35F205C96F58BA9ED8AC59A9F0EDF27BBC5D
-              7E8FEB82417E90FB26B764867967EEFD465ECCF2EB5A91282A7D8922E7E8F36B
-              788916CF8E0E487E5EC90477FEAE1A1CDDD2FCCE6FA6168B47BDC5E7A3792A1A
-              9110BF5547EAD2375A8F3F866BFF4226B893FCBC82AED281B8062EF655EDE13E
-              43F6A7CEF2848939DB56F4BDEC6D7C2618E2DDCA79325E1F199BE6E5C5D75A01
-              10B67B3E07C30C09E4CBEACC43E2625FE318BCA6D3DFF8A7CE612C8841CA852C
-              4000EC7796ADDADA8999C21916E3225B939B18F272CC2C9DE1A5C2AB2D73B689
-              E1C17080C47217A5B494C318B0B6EED50160984104EDCF4171014A051A106AD9
-              D6B41CE7AA173836F74FFE5BB9483EBECCF30BAFE0B4A1C936840312107C1428
-              15A0B880F6E5A87FCA9953573AD5BC02B3938F09FC82D222B278091D580789FA
-              06AEA13C691CAF372DC75A6F002B868BD1A5466C3BC23E6769EC884A09599847
-              FB06209541E1313BBCF781CE0E00A65A3804BC40B21FD219E4F207502D03E021
-              DCEF2C3BF44AC907B58516F31D6A5ACDAB65E4F23CA43390CA00BC60AA8596AF
-              A61600B9F940241AEF01CE697A0D84696429DFC8FBC0841AD677391DEB1126D4
-              D07C16A4B000611A4D0F009C138DF7C8CD07A21501006464FCA2A81B054ADA9F
-              43D7AC6FC907C0EDDA09F06D2757D67C796876A8BEA7A024EA466564FC627B5D
-              D79B5046EE3B25B0BFFED069B6B90BC0E66E77C672ADC07E19B9EF54E78455AE
-              6219DE3BA92A47BAE506E182895C564436C5C6DB1C392FB70E2E749BABCA6119
-              DE3BB9A2CF4A09009D9AB2BA3D7A11F86A5BE68219BE776373C4CD1E3B0FB2A1
-              4DE284BCE1EF96B1B178258F55DF863236168BCAE1D5E6AC5A2FFAD06AE65705
-              A8ABB8373F2E00B1B96AEDD5018CACFBD8009E0EFDFF00CA96CEA094AF29D6B5
-              B675FC0FD210F6B5B2B642FC0000000049454E44AE426082}
+              0020000000200806000000737A7AF40000000473424954080808087C08648800
+              00000970485973000000E7000000E701F01B58B50000001974455874536F6674
+              77617265007777772E696E6B73636170652E6F72679BEE3C1A000003F3494441
+              545885B5974D6C545514C77FE7DE3733ED740A2D25695A8D22502324B6559A9A
+              6EFC20268A1B56B03204A3897163E246A9D5B00209B11B5D881B352E594A14AB
+              1216261068028804855235565182D39A76DAD29977EF7131ED307DF3D196194F
+              7217F79CFFB9E77FFFF7EB3D54957AB7FE1B878F6D1DFB20B11AACA1CED63F7E
+              78BFC2AB1B98195C0D5E54B56EC5FBAE0F6F3436FB33D00664D5B8EED187DEB9
+              562DA7AE0A88CD0D2F1607888BB71FAF945337024F8C1FD929E8BE88FBA9FE5F
+              DE7BA95A5E5D96A0EBC687895699FD11B4AB4C381D2ADB2E6C1DBC5D2EB72E0A
+              B4CACC5085E2006D3161B8526ECD0A0C8C1DDDE68CBB04C4AB02459F3DBFF9ED
+              53F746E0EA33295CF2713C7D5EF411E3750C189D4CB55D78DE6C3F81CA932B0F
+              22634D76A1FBF4A683778ABD41D59C6BBB9BFD9DDCFB42E32BA026CF18540480
+              EFB37125B1D859D1B46BD6C587807797D1AAA8C0E51776AAF209F060B9F094C4
+              D89BEC635AAACF216259EB6DEFD9AE377F5A7294CFBEB86B408D7C4B74932AE4
+              A61C418BA5C17A3E9FBF58085D334DFA56C3F6BC1AAAB0288CA0AF1B6B4E2CE1
+              72A253C543961238BBB75193F259B4B8CF2A6E2EDF309E4452E988BB423C2DB1
+              7C45AF646FA689B5B722318B87DBE7361DF8AD922425047C72F690C0C3C5BE70
+              DA134E7BC48058F0731E9781609D21581711C97B34F4A87348CC56AA5BB0C83D
+              202268C9CDE5663DB6C990E80C487404243A036CCAE0327EC5026B2370E1B92D
+              404B14A41E24B6DC679382C4577900AAD8F22508A48F3287C2C4059751C4E683
+              024842886F5C59E2B51140369705AD37E4A63CB9B42B8242ACC5609B6ABBCD23
+              04F44A7E7ECBCDC48444BB458BEAE7FE7584338A6DAAA97E640FE474B41C68E1
+              96C3CD2B622934DB206858FB4BBA9CC08EAFFF02FE2C4109B88C47432D3437AF
+              4850FB262C5940110E457D41B3C1679585BF5DA1F9052DB903EA4280EE93C710
+              F9AED8659342436740AC350F8FB5181A3A026CF27F50005425675F46482F730B
+              D82693DFF9295392E9944C1E27208298D5A9531EB5E38BDFC585DDC0C568C8A6
+              CAA408973F8D3FF022805843FCBE0D487C75AF64659A8F7D7353448F2EF6AE00
+              2E82708B7E44E5A373B6E55681CF2A675F9D0080671CB82AD753BD32976A0EE7
+              757F6ECA1366FC6B226EBDF47CF56834459D67E18F7FD06C580702BD2747656A
+              BE873DC71D03C7E7B393EE0737EB09A7DD25BA47660114398284237719003EFF
+              DB553B0180A74F17A662729206D2065FF8C4363D5F0ED23DF2EB525F0243ACBD
+              059388BC5EF74CA0C81A778F4C34CEE53625769D1A8FC6423585299BC6BB1FC8
+              82A92AC5DA6F923DA733E5DCF1C6EC1894BCA50EDC99FA12A86067EE3F382970
+              00583A0D1382BE717ECBD044B5BCFF004281CB698E8276440000000049454E44
+              AE426082}
             ExplicitLeft = 9
             ExplicitTop = 2
             ExplicitHeight = 31
           end
           object Label6: TLabel
-            Left = 41
+            Left = 47
             Top = 1
-            Width = 58
+            Width = 67
             Height = 39
             Align = alClient
             Alignment = taCenter
@@ -418,19 +401,19 @@ object FormPrincipal: TFormPrincipal
             Font.Style = [fsBold]
             ParentFont = False
             Layout = tlCenter
-            ExplicitLeft = 51
-            ExplicitTop = 12
-            ExplicitWidth = 44
-            ExplicitHeight = 16
+            ExplicitWidth = 87
           end
-          object ProgressBar3: TProgressBar
+          object pnInfosReceitas_3: TPanel
             AlignWithMargins = True
-            Left = 102
+            Left = 117
             Top = 4
-            Width = 147
+            Width = 132
             Height = 33
             Align = alRight
             TabOrder = 0
+            ExplicitLeft = 121
+            ExplicitTop = 2
+            ExplicitHeight = 39
           end
         end
       end
@@ -468,6 +451,44 @@ object FormPrincipal: TFormPrincipal
           Height = 41
           Align = alTop
           TabOrder = 0
+          object Image6: TImage
+            AlignWithMargins = True
+            Left = 4
+            Top = 4
+            Width = 40
+            Height = 33
+            Align = alLeft
+            ExplicitLeft = 9
+            ExplicitTop = 2
+            ExplicitHeight = 39
+          end
+          object Label9: TLabel
+            Left = 47
+            Top = 1
+            Width = 78
+            Height = 39
+            Align = alClient
+            Alignment = taCenter
+            Caption = 'Despesa:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -13
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+            Layout = tlCenter
+            ExplicitWidth = 60
+            ExplicitHeight = 16
+          end
+          object ProgressBar3: TProgressBar
+            AlignWithMargins = True
+            Left = 128
+            Top = 4
+            Width = 121
+            Height = 33
+            Align = alRight
+            TabOrder = 0
+          end
         end
         object Panel4: TPanel
           AlignWithMargins = True
@@ -477,9 +498,44 @@ object FormPrincipal: TFormPrincipal
           Height = 41
           Align = alTop
           TabOrder = 1
-          ExplicitLeft = 2
-          ExplicitTop = 29
-          ExplicitWidth = 259
+          object Image5: TImage
+            AlignWithMargins = True
+            Left = 4
+            Top = 4
+            Width = 40
+            Height = 33
+            Align = alLeft
+            ExplicitLeft = 9
+            ExplicitTop = 2
+            ExplicitHeight = 39
+          end
+          object Label8: TLabel
+            Left = 47
+            Top = 1
+            Width = 78
+            Height = 39
+            Align = alClient
+            Alignment = taCenter
+            Caption = 'Despesa:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -13
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+            Layout = tlCenter
+            ExplicitWidth = 60
+            ExplicitHeight = 16
+          end
+          object ProgressBar2: TProgressBar
+            AlignWithMargins = True
+            Left = 128
+            Top = 4
+            Width = 121
+            Height = 33
+            Align = alRight
+            TabOrder = 0
+          end
         end
         object Panel7: TPanel
           AlignWithMargins = True
@@ -489,9 +545,45 @@ object FormPrincipal: TFormPrincipal
           Height = 41
           Align = alTop
           TabOrder = 2
-          ExplicitLeft = 2
-          ExplicitTop = 29
-          ExplicitWidth = 259
+          object Image4: TImage
+            AlignWithMargins = True
+            Left = 4
+            Top = 4
+            Width = 40
+            Height = 33
+            Align = alLeft
+            ExplicitLeft = 1
+            ExplicitTop = 1
+            ExplicitHeight = 39
+          end
+          object Label7: TLabel
+            Left = 47
+            Top = 1
+            Width = 78
+            Height = 39
+            Align = alClient
+            Alignment = taCenter
+            Caption = 'Despesa:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -13
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+            Layout = tlCenter
+            ExplicitWidth = 60
+            ExplicitHeight = 16
+          end
+          object ProgressBar1: TProgressBar
+            AlignWithMargins = True
+            Left = 128
+            Top = 4
+            Width = 121
+            Height = 33
+            Align = alRight
+            TabOrder = 0
+            ExplicitLeft = 127
+          end
         end
       end
     end
@@ -505,14 +597,12 @@ object FormPrincipal: TFormPrincipal
       Color = clGradientInactiveCaption
       ParentBackground = False
       TabOrder = 2
-      ExplicitWidth = 17
-      ExplicitHeight = 167
       object tabOpcoes: TTabControl
         AlignWithMargins = True
         Left = 4
         Top = 4
         Width = 448
-        Height = 93
+        Height = 125
         Align = alTop
         BiDiMode = bdLeftToRight
         Font.Charset = DEFAULT_CHARSET
@@ -534,44 +624,185 @@ object FormPrincipal: TFormPrincipal
         Touch.ParentTabletOptions = False
         Touch.TabletOptions = [toPressAndHold]
         OnChange = TabControl1Change
-        ExplicitWidth = 9
         object Panel6: TPanel
           Left = 4
           Top = 4
           Width = 440
-          Height = 67
+          Height = 99
           Align = alClient
           Color = clActiveCaption
           ParentBackground = False
           TabOrder = 0
-          ExplicitWidth = 1
-          ExplicitHeight = 31
-          object GroupBox2: TGroupBox
+          ExplicitLeft = 5
+          ExplicitTop = 3
+          object Panel8: TPanel
+            AlignWithMargins = True
+            Left = 106
+            Top = 4
+            Width = 279
+            Height = 91
+            Align = alLeft
+            TabOrder = 0
+            object Panel10: TPanel
+              Left = 1
+              Top = 1
+              Width = 128
+              Height = 89
+              Align = alLeft
+              TabOrder = 0
+              object Image7: TImage
+                AlignWithMargins = True
+                Left = 4
+                Top = 4
+                Width = 120
+                Height = 53
+                Align = alTop
+                Center = True
+                Picture.Data = {
+                  0D546478536D617274496D61676589504E470D0A1A0A0000000D494844520000
+                  0020000000200806000000737A7AF40000000473424954080808087C08648800
+                  00000970485973000000EC000000EC01792871BD0000001974455874536F6674
+                  77617265007777772E696E6B73636170652E6F72679BEE3C1A000003C8494441
+                  545885C5974B685C5518C77FE7BEE691471F14EA14EA22742154A521820F244D
+                  2191DA1469C591925229A8A0E26321B8D388EE44440A0614A382544B7CB4D5A4
+                  D2DA9AB68A2DAE14C1557061D585503333C9DCB9CFF3B918934E9C47EE0C69FD
+                  E06ECEF7FFCEFF7FCF3DDFE3C2FF6CEA4611C954DEE4A6DFA7B1D369EE9211A5
+                  CE4700C68D12C0E63F5E4499BBE9CE0DF1E3FA534BCB1D9DC0D0ECE1F566ECBF
+                  A760AF8293A1993A747ED7075E33BC5CBC7B27A873F4E64CEC6C75D12B3DAD06
+                  4EBED5F609DC77FAC0564BFBDF2AD80FD8020F599137B64AD804A9AE6BE4004E
+                  E67568F3138C9C19DBA14D7519E1D6150E83ADADE2D4E0A5EDF88B2F71750E04
+                  08168FABDB8E6500ACA4E4C367C78605F9145857E7D486DA76E4CEDEAC63EC43
+                  8B72A30DC7E69EFDCA5F8111D98469811220FC69693991809173638745E41DC0
+                  AEE3D69AD25F570733B6F18C081B518A8C5DD80BE497B9BF1E5887527952BD20
+                  22C49937930910D4F0D9B1711119AF73698D5B28E1164AE858EFFA8F7BDF326E
+                  766013A6F309A99E1C998D102D1E57779C28AE2A606876C8B2BEC94DA0E4F17A
+                  E205DCF9225AEB66E135FB1A16A041415099A3DF7EB816D8300D8766F3DD766C
+                  4F09727F1D71A1888E9B122FDBCF4F5E5ADE5BA6F2269BAF8C3278F94BA59096
+                  0246CE1CD822869A06FA3B216E24A09529807C7EBBD35BC8BC2AC22120B7E4CC
+                  A41DB25927316933138438D20B7120CF1D99FEEEFD5A9F01D0339F7D4584176A
+                  C9AB816B630A8565993D76DA9C7C6ACF3D3BEA04803CD22850C7F11A49F897CC
+                  50CAB2CCE71B0858F9E64B16EBB53A835A465951355B96E238D668497EF13AD2
+                  B31A200CAFAF0013A0BF6FCBCBCD00829072EA2A704B13013F8808A388288A57
+                  3C6118E9DB6FCE95EFBD25FBCB0F737FC7ABF682308889628D65266F9C65D7C7
+                  F7C366EE3E14EF96A3F5BB817CA25D2B95203139401844008C1E7C8CD73E3EC5
+                  E8C147EB41C20390701E088288384A7E17B454B367E7E87E9C549AC13D0F3682
+                  398905002C2C561049969686AA56E10B339F1378152ECC7CD608E6431B0349AC
+                  05D70DE8EA4AAD8AB51D0BDF0F99393AC9CCD1C92628F5455B02003C3FC4340D
+                  D2E9D659D1954D615966C3E61545F19520D2E3DDF6FC476D0B80EA0D17844CBA
+                  7993520AD2A9C65BFB41F4EBDB27AE35A48EFE0B5C37A0E2B69719CDACE31F13
+                  D70B28965CE2E653515B02FEEC24388A34C56205CF0F49982020FCD64080FAB0
+                  1301501D72CB659FF94219CF0B5AA6AAD62251A8DFA85D3301B60D6CB898F21C
+                  07E8037A3A151386319E5FADFF008661A094AA4E44B12EF961FCC4C4F4F7A73B
+                  DDFFBAD83FB437A4F662C780120000000049454E44AE426082}
+                ExplicitLeft = 21
+                ExplicitTop = 25
+                ExplicitWidth = 94
+              end
+            end
+          end
+          object Panel9: TPanel
             AlignWithMargins = True
             Left = 4
             Top = 4
-            Width = 432
-            Height = 59
-            Align = alClient
-            TabOrder = 0
-            ExplicitWidth = 454
-            ExplicitHeight = 23
+            Width = 96
+            Height = 91
+            Align = alLeft
+            TabOrder = 1
+            ExplicitLeft = 12
+            ExplicitTop = 8
+            object Image8: TImage
+              AlignWithMargins = True
+              Left = 4
+              Top = 4
+              Width = 88
+              Height = 53
+              Align = alTop
+              Center = True
+              Picture.Data = {
+                0D546478536D617274496D61676589504E470D0A1A0A0000000D494844520000
+                0020000000200806000000737A7AF40000000473424954080808087C08648800
+                00000970485973000000EC000000EC01792871BD0000001974455874536F6674
+                77617265007777772E696E6B73636170652E6F72679BEE3C1A000004E9494441
+                545885ED97DB8F145510C67F754EF7F4F4EEECACBBE8020A128D51824612C468
+                7C9388D710056F312A6ABC065F8C3E9BA8FF8297448D60086AC4884A8C188D89
+                1A134D409444375E6220784370C59DD99DE9E93EE7940FB3EE3280EC0C8137EB
+                ADCF547DF59DEAAFAA7A84E3B40DBBEF2E6BBDFF75001998BCF59EB35ECE8E07
+                478E27E8F91D0FF4C5A5E86D60E5D4D1275ACA56DDBB787DFDA41378F6DB7595
+                D4B115E1F2C37EDA1E6CEBEAFBCE7FE9AF934660C3578F9CA2367F1FB8E43F5C
+                7616B9BBEAC1E52FFC79C2096CDCF5D08813F90064E92C90A3EA64E5BDCB9EF9
+                ED8411D8F0EDBA79EAF910B8A01B7FE07BAFF68AFB973EFDCB6C8EA61B34F5FA
+                5A0FC901CE8BC4BFD28D6377049CBDDDA0CB155E9CD5175E34E8F2E0CC6DDD60
+                F726C25DEBD6A9F0EC31019587EF59FADC73DD627655819369FF13884E1450AC
+                CA8A506358FD936BBFBCF5B1EEA2F4FDA38A509F7F207673C756A8C8CA10C252
+                D7C82F2C55928F7F4D93CAAEA1CAB57F2547F29EAB0557BBF15E79EB1104F2B7
+                6F5A0BFA14C22200F54A3E91910CA6D33E07CA313B87073890C4D367C3EA58E5
+                FEEE95C0F83401DD744DB5D59F6C32C6AE02DA0D9A0858C5373C51258296A279
+                DB3F208C0E247C7DEA20A7D59BCCAB37A9E219CA8B1FFB9C3FE618164BA3BC20
+                FDCCA8F94800F489274C6BC9CEED79CB2D4BFACB98AAC10C9AA34A5473D0BF3D
+                BEE12926727E5C38CCFCFDE3F4B75C8F97971BAA77BDF78E0170CBBE79D424F1
+                B2288ED0B262866692FBA6A7B9A7893A6D8795C08C587CF0C495124BEA19B1E9
+                BD99048D0122DDB27A4EA1FA38403C526ADF7CCAF27D2D8AB102509A3F4C902C
+                48B1D5B600CB67A784FD1ECD159BC6CD89C4E4261253F2E140A2E19862D040DD
+                62760044CECADD40150BA63A933C641E7730A77C664AEB978CE48C32AD5F33FA
+                AA95995B0C19F48F407FD0B43A372A138B0003DD5440E155E032A3C87500924A
+                C766D09662128B94DAA46C35426283FA43CA180B526A0769D6DB5E11DA5D6640
+                960048B9335E524BC8026172465CE9397D883D0C698A0085F6A44281CF01A4B6
+                F15A1520599862AB9DE8EE6041FE7B0B55251A8C29CD4F10DB4934FF2DC71DCC
+                31561ADEF9264752FC2F1B37416E884A95A40E0C98F8C80A464331A66CC9764F
+                A201B2BD19E95969878F2D5BA4928057E75D98D37509E0946058618C35DF196B
+                E0B002FACC538CE5ED7614215990101A0EF5DAE91804630D8A8EF590FCDFE0B1
+                48850F44B9581B8A1CAA5FAF147F1698BE76DB69313507CC4CA5D42BB4DAE7F1
+                DCE4A7C8C67BD1D9376CF0DA287E6E6EEC2F555E976CCBEA738D35A38035C306
+                E99B49D0DCD3843C105C40AC211E8A88479219A083019D54C4E2CC7CDBD36655
+                744D74D11B6F99F29AB77E00D60314FB0B7CED10D52F2A13CD89111192D3938E
+                E4C51F05A116DA0F03A6E735888881A9CED7CD375732538CBAC97C615429118F
+                C41D734183CE945E21D402C581162EF794FA93ADD1A2D266237A7D703A44D0FE
+                596F1F64B2B57B7263019F4ED7BBF1E69A4B45C3661BDB850012B78793C44270
+                1E892C9A2B3A0984F67B7759B1332D8ACBE58E6DB5DA862B1763EC28BD7DE8EE
+                9B164CDF8D5BBE28C7E17CDA9FDE4E0B0835C5EDF7647B33C25840EBFA6FF271
+                9447D35BB62E973BB6D5DA158D467A4C0E30EFA801D996D5E78AB5770ABA52BD
+                2EC927B281D260FABB20DFA0FA6E9C9B4D72CB1B1D7F42EBEBAF394D2DDB991A
+                B15DDAB67F00661D09032F11411B0000000049454E44AE426082}
+              ExplicitLeft = 1
+              ExplicitTop = 1
+              ExplicitWidth = 94
+            end
+            object Label11: TLabel
+              AlignWithMargins = True
+              Left = 4
+              Top = 63
+              Width = 88
+              Height = 24
+              Align = alClient
+              Alignment = taCenter
+              Caption = 'Receitas'
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWhite
+              Font.Height = -11
+              Font.Name = 'Tahoma'
+              Font.Style = [fsBold]
+              ParentFont = False
+              Layout = tlCenter
+              ExplicitWidth = 49
+              ExplicitHeight = 13
+            end
           end
         end
       end
       object cxGrid1: TcxGrid
         AlignWithMargins = True
         Left = 4
-        Top = 103
+        Top = 135
         Width = 448
-        Height = 407
+        Height = 375
         Align = alClient
         TabOrder = 1
-        ExplicitWidth = 9
-        ExplicitHeight = 60
+        ExplicitTop = 103
+        ExplicitHeight = 407
         object cxGrid1DBTableView1: TcxGridDBTableView
           Navigator.Buttons.CustomButtons = <>
           ScrollbarAnnotations.CustomAnnotations = <>
+          DataController.DataSource = dsDados
           DataController.Summary.DefaultGroupSummaryItems = <>
           DataController.Summary.FooterSummaryItems = <>
           DataController.Summary.SummaryGroups = <>
@@ -582,5 +813,16 @@ object FormPrincipal: TFormPrincipal
         end
       end
     end
+  end
+  object dsDados: TDataSource
+    DataSet = QueryDados
+    Left = 384
+    Top = 112
+  end
+  object QueryDados: TADODataSet
+    Connection = dmDados.adoConexao
+    Parameters = <>
+    Left = 424
+    Top = 112
   end
 end

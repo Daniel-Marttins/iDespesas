@@ -77,7 +77,7 @@ object FormPrincipal: TFormPrincipal
           Layout = tlCenter
           ExplicitWidth = 54
         end
-        object datPeriodo: TDateTimePicker
+        object DateTimePicker1: TDateTimePicker
           AlignWithMargins = True
           Left = 4
           Top = 20
@@ -150,7 +150,7 @@ object FormPrincipal: TFormPrincipal
           Font.Name = 'Tahoma'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitTop = 3
+          ExplicitWidth = 102
         end
         object pnReceita_2: TPanel
           Left = 1

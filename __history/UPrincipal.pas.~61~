@@ -26,7 +26,7 @@ uses
   cxData, cxDataStorage, cxEdit, cxNavigator, dxDateRanges,
   dxScrollbarAnnotations, cxDBData, cxGridLevel, cxClasses, cxGridCustomView,
   cxGridCustomTableView, cxGridTableView, cxGridDBTableView, cxGrid,
-  dxGDIPlusClasses;
+  dxGDIPlusClasses, Data.Win.ADODB;
 
 type
   TFormPrincipal = class(TForm)
@@ -36,7 +36,6 @@ type
     Panel5: TPanel;
     tabOpcoes: TTabControl;
     Panel6: TPanel;
-    GroupBox2: TGroupBox;
     pnData: TPanel;
     tituloData: TLabel;
     DateTimePicker1: TDateTimePicker;
@@ -51,15 +50,37 @@ type
     pnInfo_3: TPanel;
     pnReceita_1: TPanel;
     Panel3: TPanel;
-    ProgressBar1: TProgressBar;
-    ProgressBar2: TProgressBar;
-    ProgressBar3: TProgressBar;
     Image1: TImage;
     cxGrid1DBTableView1: TcxGridDBTableView;
     cxGrid1Level1: TcxGridLevel;
     cxGrid1: TcxGrid;
     Image2: TImage;
     Image3: TImage;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Panel4: TPanel;
+    Panel7: TPanel;
+    Image4: TImage;
+    Image5: TImage;
+    Image6: TImage;
+    dsDados: TDataSource;
+    QueryDados: TADODataSet;
+    ProgressBar1: TProgressBar;
+    ProgressBar2: TProgressBar;
+    ProgressBar3: TProgressBar;
+    pnInfosReceitas_1: TPanel;
+    pnInfosReceitas_2: TPanel;
+    pnInfosReceitas_3: TPanel;
+    Label7: TLabel;
+    Label8: TLabel;
+    Label9: TLabel;
+    Panel8: TPanel;
+    Image7: TImage;
+    Label10: TLabel;
+    Panel9: TPanel;
+    Image8: TImage;
+    Label11: TLabel;
     procedure TabControl1Change(Sender: TObject);
   private
     { Private declarations }

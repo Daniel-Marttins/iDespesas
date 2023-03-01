@@ -150,7 +150,7 @@ object FormPrincipal: TFormPrincipal
           Font.Name = 'Tahoma'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitTop = 3
+          ExplicitWidth = 102
         end
         object pnReceita_2: TPanel
           Left = 1

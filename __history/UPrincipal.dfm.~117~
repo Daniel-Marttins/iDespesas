@@ -77,7 +77,7 @@ object FormPrincipal: TFormPrincipal
           Layout = tlCenter
           ExplicitWidth = 54
         end
-        object datPeriodo: TDateTimePicker
+        object DateTimePicker1: TDateTimePicker
           AlignWithMargins = True
           Left = 4
           Top = 20
@@ -150,7 +150,7 @@ object FormPrincipal: TFormPrincipal
           Font.Name = 'Tahoma'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitTop = 3
+          ExplicitWidth = 102
         end
         object pnReceita_2: TPanel
           Left = 1
@@ -702,7 +702,7 @@ object FormPrincipal: TFormPrincipal
                 Height = 20
                 Align = alClient
                 Alignment = taCenter
-                Caption = 'Rendimentos'
+                Caption = 'Investimentos'
                 Font.Charset = DEFAULT_CHARSET
                 Font.Color = clWhite
                 Font.Height = -11
@@ -710,7 +710,7 @@ object FormPrincipal: TFormPrincipal
                 Font.Style = [fsBold]
                 ParentFont = False
                 Layout = tlCenter
-                ExplicitWidth = 75
+                ExplicitWidth = 83
                 ExplicitHeight = 13
               end
             end
@@ -877,81 +877,9 @@ object FormPrincipal: TFormPrincipal
               ExplicitHeight = 13
             end
           end
-          object Panel12: TPanel
-            Left = 364
-            Top = 1
-            Width = 75
-            Height = 97
-            Align = alClient
-            TabOrder = 2
-            ExplicitLeft = 367
-            ExplicitTop = 24
-            ExplicitWidth = 185
-            ExplicitHeight = 41
-            object Image10: TImage
-              Left = 1
-              Top = 1
-              Width = 73
-              Height = 95
-              Align = alClient
-              Center = True
-              Picture.Data = {
-                0D546478536D617274496D61676589504E470D0A1A0A0000000D494844520000
-                0020000000200806000000737A7AF40000000970485973000000EC000000EC01
-                792871BD0000001974455874536F667477617265007777772E696E6B73636170
-                652E6F72679BEE3C1A00000545494441545885CD974B6C546514C77FE7BEA633
-                D3B9D396D7745A698371E163C1432221128D4117EA4625D1B8D0405B4858688B
-                442A119C8D3AD490A2460DA51217C695D18D1A1F0D09A63B144944A290882834
-                92087466EECCD0993BF77331ED30737BFB808DFE93597CE73BE7FCCF77BE73CE
-                FD06FE63C8AD180D0E1F790891F50D42A54EA407FA8EDDAC2FE3560240E47160
-                C0271B066E3A006DDEDD546AFEFDC540A979B33C27416FEAC08667F3E47A53E9
-                E76E957BEFF0C8EAC1B73FFC7170F8E8AAB97402A3EBDD37B4C92938C75CD735
-                AC50C8ED684FDCF7D6C08E9383EFBFDF2AA5D01685EA07EEF2999D11E490B2A6
-                3E4DEFDC796DF09DD135E231A6A00DC505D01F4C0F6CFD63C100FA520737E672
-                99E3AEEB1A8661D091486299C6554FF84814BD80BDC0C1B3204704B555415B4D
-                3A47108D57904A69792737E6BAAE619A5572D33450D0268A5D8B20A7AAA35E6A
-                20AF1EB50BA97CE6AF89C62E48A5BCD8FEA1AD4E918F13CB138669CE6E926C2E
-                C3E58909F2C53C9E5B4101866E108E46599168276EC703A35230A93CD98E886A
-                8C2B0083073F58836E7E072C9991795E8573E7CEE2643368BA81150E631A26A2
-                EBB57DB75C26D214A6ABBB0B4D743FF9C343BB7A7EF073E97E01C0F8B75FFE7D
-                E7864D0F3459A13B4404CFABF0CBE99F29160B849B634462368661229A868820
-                22689A86619828C071F2C4ED1822327D4A79EFC040CF47415C811978FED5A1DB
-                0B4EE69C6559D2994C72F6B75F717259A2761CC3B4824C66216EDB2C5BB27466
-                99C52A75A777EEBCE6D70B9C84BA725F534A89AE69E472599C6C867073AC465E
-                09B5E2B4AE67CA350145C8A8D03C790AFDFAE59A8F4C2E47DC8E63992680CD94
-                F514301A9881ADFB865E5695F21333C252B9B4BA542A37255724B8F4D7059C7C
-                9E586B5B8DFCAABD111121DE1A2514364141A958443FFF0D52766ACE5BE27196
-                B6D5CAE834F0656D536963E9816D630680AA941F75F2F90D9A7EA32B0DC3241C
-                89502814B0C2E19ADC695D8F78C2B2F616344D6AC7084523A8CEB578E7BFAFE9
-                168BC5FAC3DE33FD9B46E53A30D67005AB5676FB33845B7169AAA6118029D7A4
-                7549F406797D3A63C98675B9ECCED2F163C18F8D20685A7DB3A86ADA0395956F
-                BD20FFC201684663A7868C0ACA5381BA2A33D1B0368D85BFF60680E8E657CDD1
-                6808383E2D7F8CE9FB8A44A2785E055DAF3A6B9E3C45D9BE9F5034D2E8C99D42
-                4D9C6C10859BC2F5CBC622441F87B926E1F0682FC211804C36C3C54B1709D539
-                5366337AE7DADA9DABEC25D4C44954297FC389082B931D5856B57505E97DB3BF
-                E7C3C00CF8912F15BEBEF2CFB5CA6D1D1D7ADC8E73F5CA152A75FB52761AAA3D
-                082DB1588D1C21A3CCA9CF82F4026BE0DD3D2F5C344DFDA762A10040577717A1
-                454E40804853B8BEFF41C968D0149C33801DFB879E2E16AFAF9BCC66AA4AA2D3
-                D991246EDB20F394B6082DB64D329168D053A89EC14323EB034DFC82BE7DAF3F
-                93C9153EF19492502844673289D4A995CA65B2B92CC56291B25B06C0344CC24D
-                61ECFAB4FBA06052F01E49F76F3F512FF7BF07B4BC533E3A43DE91686F2007B0
-                4CB331BD8B84400B6887516A5DFD9BC0FF22F29A9B9B1E8946C2858E443B9AA6
-                CD185F0539086417C195053958B5A983E2024A7FD2FF2099550323A9C1F1F6E5
-                9D776BA25D9821571A9BD3FD3DBBB14ADD28FA803301C46750F46195BAD3FD3D
-                BB95C6E65A1037F3289DC19EB70FAF44699F2B4FDBE17FC9BC72687444419FCF
-                6438DDDFBBAB5EB0777864B527DA5194B6253DB0EDF7209E3967E5811777FC89
-                52F7FA53563D91AC9B35F703F0C6C0F653FE3BF763FE6FC13C868BC6023E6EF1
-                BF61E50B94141119AF89F0C6E733F9DFE25FF712DAA8F20838A4000000004945
-                4E44AE426082}
-              ExplicitLeft = 16
-              ExplicitTop = 20
-              ExplicitWidth = 105
-              ExplicitHeight = 105
-            end
-          end
         end
       end
-      object cxdbDespesas: TcxGrid
+      object cxGrid1: TcxGrid
         AlignWithMargins = True
         Left = 4
         Top = 135
@@ -959,8 +887,9 @@ object FormPrincipal: TFormPrincipal
         Height = 375
         Align = alClient
         TabOrder = 1
-        ExplicitLeft = 8
-        object cxdbDespesasDBTableView1: TcxGridDBTableView
+        ExplicitTop = 103
+        ExplicitHeight = 407
+        object cxGrid1DBTableView1: TcxGridDBTableView
           Navigator.Buttons.CustomButtons = <>
           ScrollbarAnnotations.CustomAnnotations = <>
           DataController.DataSource = dsDados
@@ -968,8 +897,8 @@ object FormPrincipal: TFormPrincipal
           DataController.Summary.FooterSummaryItems = <>
           DataController.Summary.SummaryGroups = <>
         end
-        object cxdbDespesasLevel1: TcxGridLevel
-          GridView = cxdbDespesasDBTableView1
+        object cxGrid1Level1: TcxGridLevel
+          GridView = cxGrid1DBTableView1
           Options.DetailTabsPosition = dtpTop
         end
       end

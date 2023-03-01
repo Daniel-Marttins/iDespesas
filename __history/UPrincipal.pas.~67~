@@ -38,7 +38,7 @@ type
     Panel6: TPanel;
     pnData: TPanel;
     tituloData: TLabel;
-    datPeriodo: TDateTimePicker;
+    DateTimePicker1: TDateTimePicker;
     pnRendimentos: TPanel;
     pnReceitas: TPanel;
     pnDespesas: TPanel;
@@ -51,9 +51,9 @@ type
     pnReceita_1: TPanel;
     Panel3: TPanel;
     Image1: TImage;
-    cxdbDespesasDBTableView1: TcxGridDBTableView;
-    cxdbDespesasLevel1: TcxGridLevel;
-    cxdbDespesas: TcxGrid;
+    cxGrid1DBTableView1: TcxGridDBTableView;
+    cxGrid1Level1: TcxGridLevel;
+    cxGrid1: TcxGrid;
     Image2: TImage;
     Image3: TImage;
     Label4: TLabel;

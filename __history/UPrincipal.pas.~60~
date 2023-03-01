@@ -38,7 +38,7 @@ type
     Panel6: TPanel;
     pnData: TPanel;
     tituloData: TLabel;
-    datPeriodo: TDateTimePicker;
+    DateTimePicker1: TDateTimePicker;
     pnRendimentos: TPanel;
     pnReceitas: TPanel;
     pnDespesas: TPanel;
@@ -51,9 +51,9 @@ type
     pnReceita_1: TPanel;
     Panel3: TPanel;
     Image1: TImage;
-    cxdbDespesasDBTableView1: TcxGridDBTableView;
-    cxdbDespesasLevel1: TcxGridLevel;
-    cxdbDespesas: TcxGrid;
+    cxGrid1DBTableView1: TcxGridDBTableView;
+    cxGrid1Level1: TcxGridLevel;
+    cxGrid1: TcxGrid;
     Image2: TImage;
     Image3: TImage;
     Label4: TLabel;
@@ -76,17 +76,8 @@ type
     Label8: TLabel;
     Label9: TLabel;
     Panel8: TPanel;
-    Panel9: TPanel;
-    Image8: TImage;
-    Label11: TLabel;
-    Panel10: TPanel;
     Image7: TImage;
-    Panel11: TPanel;
-    Image9: TImage;
     Label10: TLabel;
-    Label12: TLabel;
-    Panel12: TPanel;
-    Image10: TImage;
     procedure TabControl1Change(Sender: TObject);
   private
     { Private declarations }
